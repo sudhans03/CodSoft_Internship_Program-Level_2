@@ -1,0 +1,201 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inika:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Khojki&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+/* Remove Browser styles */
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: blueviolet;
+}
+ul {
+     font-family: "Poppins", sans-serif;
+     font-weight: 100;
+     font-style: normal;
+}
+:root {
+    --primary: rgb(5, 5, 42);
+    --primary-light:rgb(74, 71, 82);
+    --secondary:black;
+    --secondary-light:rgb(40, 8, 8);    
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.header-content img {
+    width: 100%;
+    height: 100%;
+
+}
+header {
+    min-height: 100vh;
+    background:url(first\ tata\ wall.jpg);
+    background-size: cover;
+    background-position: right;
+    
+}
+.header-content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 150px;
+}
+.nav-links {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links a {
+    color: rgb(232, 210, 210);
+}
+.nav-links li::after {
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 300ms;
+}
+.nav-links li:hover::after {
+    transform: scaleX(1);
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-150%);
+    text-align:center;
+    color: rgb(32, 28, 55);
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content p{
+    margin:  -10px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+    color: rgb(8, 2, 20);   
+}
+.about{
+    margin: 0%;
+    width: 100%;
+    background-color:  #8897ad;
+    text-align: left;
+    
+}
+center{
+     color: rgb(10, 10, 10);
+     font-size: 20px;
+     margin: 0%;
+}
+.tata{
+    margin: 0%;
+    text-align: left;
+    font-size: large;
+    background-color:  #8897ad;;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*---------Contact Us---------*/
+.Contact {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 30px 0;
+    background-color:rgb(79, 96, 104) ;
+    font-size: 20px;
+    color: rgb(8, 16, 16);
+}
+
+.Contact h1{
+   padding-bottom: 90px;
+   padding-left: 35%;
+   font-size: 30px;
+   color: whitesmoke;
+   
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.social{
+    background-color: #fff;
+    width:  40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 10px;
+    border: #fff solid 2px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.social::before{
+    content: '';
+    background-color: #f0f;
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    top:  100%;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover::before{
+    top: 0;
+}
+
+a.social.twitter::before{
+     background-color: black;
+}
+a.social.Email::before{
+    background-color: #de1515;
+}
+a.social.Instagram::before{
+    background-color: #d61d6d;
+}
+a.social.Linkedin::before{
+    background-color: #0532d8;
+}
+
+a.social svg {
+    width: 25px;
+    height: 25px;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover svg {
+    transform: rotate(360deg);
+}
+a.social svg path {
+    fill: #383838;
+    transition: 0.5s all ease-in-out;
+}
+a.social:hover svg path {
+    fill: #fff;
+}
+
+body{
+    background-color: #8897ad;
+}
+.Contact p{
+   padding-top: 120px;
+   padding-left: 20%;
+}
